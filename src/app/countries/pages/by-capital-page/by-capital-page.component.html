@@ -5,10 +5,10 @@
   <div class="col">
     <shared-search-box (onValue)="searchByCapital($event)" placeolder="Search by capital"></shared-search-box>
   </div>
+</div>
+<div class="row">
   <div class="col">
     <hr>
-    <ul>
-      <li *ngFor="let country of countries">{{ country.capital }}</li>
-    </ul>
+    <countries-country-table [countries]="countries"></countries-country-table>
   </div>
 </div>
